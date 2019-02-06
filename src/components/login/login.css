@@ -1,0 +1,36 @@
+.login-container{
+    background-image: url(https://www.daffodilsw.com/wp-content/uploads/2018/06/pexels-photo-630839@2x-1.png);
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.login-form {
+    width: 33%;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+}
+.error-alert {
+    position: absolute !important;
+    right: 5%;
+    top: 5%;
+}
+.logo{
+    float: left;
+    margin: 100px;
+}
+.form-label {
+    float: left;
+    font-size: 24px;
+}
+.btn-secondary{
+    margin: 20px;
+    width:50%;
+}
+
+/* @media (min-width: 576px){
+    .mr-sm-2, .mx-sm-2 {
+        margin-right: .5rem!important;
+        color: #fff;
+    }
+} */
