@@ -1,0 +1,10 @@
+.Dashboard-main {
+    width: 40%;
+    display: inline-block;
+    box-shadow: 0px 8px 10px #eee;
+    padding: 40px;
+    margin: 40px;
+}
+.mr-sm-2, .mx-sm-2{
+    font-size: 20px;
+}

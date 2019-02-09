@@ -3,6 +3,7 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './login.css';
 import daffodil_logo from '../../assets/daffodil-logo.png';
 import { Alert } from 'reactstrap';
+import { withRouter } from 'react-router-dom';
 
 export class Login extends Component {
 
@@ -35,6 +36,8 @@ export class Login extends Component {
             this.setState({ fields_are_unfilled: true }, () => console.log(this.state))
         }else{
             this.setState({ fields_are_unfilled: false }, () => console.log(this.state))
+            localStorage.setItem('authtoken','sadasdasd');
+            this.props.history.push(`dashboard`);
         }
     }
 
@@ -44,15 +47,15 @@ export class Login extends Component {
                 <div className="login-header">
                     {this.state.fields_are_unfilled === true?
                         <Alert className="error-alert" color="danger">
-                            This is a danger alert — check it out!
+                            Please fill username/password 
                         </Alert> : ''}
                     <div  >
                         <img className="logo" src={daffodil_logo} />
                     </div>
                     <Form className="login-form">
                         <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                            <Label for="exampleEmail" className="mr-sm-2 form-label">Username</Label>
-                            <Input type="text" value={this.state.username} onChange={this.changeusername} placeholder="admin.admin" />
+                            <Label for="exampleEmail" className="mr-sm-2 form-label">Admin</Label>
+                            <Input type="text" value={this.state.username} onChange={this.changeusername} placeholder="admin name" />
                         </FormGroup>
                         <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                             <Label for="examplePassword" className="mr-sm-2 form-label">Password</Label>

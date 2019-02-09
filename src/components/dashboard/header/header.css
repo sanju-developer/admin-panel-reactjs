@@ -1,0 +1,20 @@
+.header-main {
+    padding: 20px 0;
+    background: #ef1600;
+}
+img.admin-img {
+    border-radius: 50%;
+    width: 75px;
+    margin: 0 30px;
+}
+.media-body {
+    flex: none !important;
+}
+h4.media-heading {
+    margin: 0;
+}
+.media-text {
+    display: inline-block;
+    margin: 15px 0px 0;
+    color: #fff;
+}

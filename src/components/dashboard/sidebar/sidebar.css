@@ -1,0 +1,19 @@
+.sidebar-main{
+    width: 20%;
+    display: inline-block;
+    float: left;
+    height: 100vh;
+    padding-top: 24px;
+    background: #f9f8f8;
+}
+.list-group-item{
+    background-color: #f9f8f8 !important;    
+    text-align: left;
+    border: none !important;
+    border-bottom: 1px solid #000 !important;   
+    margin: 10px 20px;
+}
+.list-group-item:last-child{
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}

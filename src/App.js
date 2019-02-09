@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import { AppRouting } from './routing/routing';
+import { Routing } from './routing/routing';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-        <AppRouting />
+        <Routing />
         </header>
       </div>
     );
