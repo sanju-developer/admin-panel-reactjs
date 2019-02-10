@@ -8,3 +8,7 @@
 .mr-sm-2, .mx-sm-2{
     font-size: 20px;
 }
+.err{
+    color: red;
+    padding: 10px;
+}
