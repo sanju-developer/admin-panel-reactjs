@@ -24,18 +24,18 @@ export class Login extends Component {
     }
 
     changeusername = (e) => {
-        this.setState({ username: e.target.value }, () => console.log(this.state))
+        this.setState({ username: e.target.value })
     }
 
     changepswd = (e) => {
-        this.setState({ password: e.target.value }, () => console.log(this.state))
+        this.setState({ password: e.target.value })
     }
 
     loginAdmin = () => {
         if (this.state.username === '' || this.state.password === '') {
-            this.setState({ fields_are_unfilled: true }, () => console.log(this.state))
+            this.setState({ fields_are_unfilled: true })
         }else{
-            this.setState({ fields_are_unfilled: false }, () => console.log(this.state))
+            this.setState({ fields_are_unfilled: false })
             localStorage.setItem('authtoken','sadasdasd');
             this.props.history.push(`dashboard`);
         }

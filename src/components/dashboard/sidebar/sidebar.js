@@ -20,6 +20,26 @@ export class SidebarPage extends Component{
                     </Link>
                 </ListGroupItem>
                 <ListGroupItem  href="#" className="user-register-form" >
+                    <Link className="list-item" to="/AddTask">
+                        Add Task >
+                    </Link>
+                </ListGroupItem>
+                <ListGroupItem  href="#" className="user-register-form" >
+                    <Link className="list-item" to="/AddProject">
+                        Add Project >
+                    </Link>
+                </ListGroupItem>
+                <ListGroupItem  href="#" className="user-register-form" >
+                    <Link className="list-item" to="/AddMeeting">
+                        Add Meeting >
+                    </Link>
+                </ListGroupItem>
+                <ListGroupItem  href="#" className="user-register-form" >
+                    <Link className="list-item" to="/AddSession">
+                        Add Session >
+                    </Link>
+                </ListGroupItem>
+                <ListGroupItem  href="#" className="user-register-form" >
                     <Link className="list-item" to="/ListOfEmployee">
                         List of Employees >
                     </Link>

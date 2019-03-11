@@ -6,6 +6,10 @@ import ListOfEmployeePages from '../components/dashboard/listofemployee/listofem
 import ListOfDevicesPages from '../components/dashboard/listofdevices/listofdevices';
 import UpdatePasswordPage from '../components/dashboard/update-password/update-password';
 import AccountsPage from '../components/dashboard/accounts/account';
+import addtask from '../components/dashboard/addtask/addtask';
+import addproject from '../components/dashboard/addproject/addproject';
+import addmeeting from '../components/dashboard/addmeeting/addmeeting';
+import addsession from '../components/dashboard/addsession/addsession';
 
 //CHECKING TOKEN IS PRESENT OR NOT
 const fakeAuth = {
@@ -56,6 +60,11 @@ export class Routing extends React.Component {
                 <PrivateRoute path="/UpdatePassword" component ={UpdatePasswordPage} />
                 <PrivateRoute path="/ListOfDevices" component ={ListOfDevicesPages} />
                 <PrivateRoute path="/ListOfEmployee" component ={ListOfEmployeePages} />
+                <PrivateRoute path="/AddTask" component ={addtask} />
+                <PrivateRoute path="/AddProject" component ={addproject} />
+                <PrivateRoute path="/AddMeeting" component ={addmeeting} />
+                <PrivateRoute path="/AddSession" component ={addsession} />
+
             </div>
             </Router>
         )
